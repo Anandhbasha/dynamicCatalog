@@ -114,12 +114,18 @@ const Card = () => {
       {getcount.map((item) => {
         return (
           <div class="card">
-            <img src={item.image} alt="Denim Jeans"/>
-            <h1>{item.name}</h1>
-            <p class="price">{item.price}</p>
-            <p>{item.cat}</p>
+            <div className="card_top">
+              <img src={item.image} alt="Denim Jeans"/>
+            </div>
+            <div className="card_content">
+              <div className="card_title">{item.name}</div>
+              <div className="card_price">{item.price}</div>
+              <div className="card-cat">{item.cat}</div>
+            </div>
+            <div className="card_bottom">
             <button className="wishlist">Add wishlist</button>
             <button className="Addcart">Add to Cart</button>
+            </div>
           </div>
         );
       })}

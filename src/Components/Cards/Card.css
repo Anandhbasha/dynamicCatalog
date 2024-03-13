@@ -1,5 +1,5 @@
 .card {
-    box-shadow: 0 4px 8px 0 rgba(248, 248, 248, 0.2);
+    background-color: #191D23;
     text-align: center;
     font-family: arial;
     color: white;
@@ -12,10 +12,10 @@
   }
   
   .wishlist {
-    background-color: #04AA6D; 
+    background-color: #aa0440; 
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 5% 8%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -24,10 +24,10 @@
     border-radius: 10px;
   }
   .Addcart {
-    background-color: #0473aa; 
+    background-color:#0d6385f2; 
     border: none;
     color: white;
-    padding: 15px 32px;
+    padding: 5% 8%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -35,20 +35,28 @@
     cursor: pointer;
     border-radius: 10px;
   }
+  .card_bottom{
+    padding-bottom: 2%;
+  }
   
   .card button:hover {
     opacity: 0.7;
   }
 .Cards{
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
-    gap: 8%;
-    justify-content: center;
+    gap: 3%;
     padding-top: 2%;
 }
-.card > img{
+.card_top > img{
     width: 300px;
-    height: 300px;
-    border-radius: 10px;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+.card_content{
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+    gap: 10px;
 }
