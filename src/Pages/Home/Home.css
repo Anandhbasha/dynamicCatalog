@@ -1,0 +1,7 @@
+.home{
+    height: 93%;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    overflow-y: scroll;
+}
