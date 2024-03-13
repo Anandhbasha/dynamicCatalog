@@ -1,108 +1,125 @@
 import React, { useState } from "react";
 import "./Card.css";
+import image1 from "../../Assets/Images/welcome.jpg"
+import image2 from "../../Assets/Images/be.jpg"
+import image3 from "../../Assets/Images/bt.jpg"
+import image4 from "../../Assets/Images/cb.jpg"
+import image5 from "../../Assets/Images/cf.jpg"
+import image6 from "../../Assets/Images/cl.jpg"
+import image7 from "../../Assets/Images/kb.jpg"
+import image8 from "../../Assets/Images/mg rice.jpg"
+import image9 from "../../Assets/Images/mg.jpg"
+import image10 from "../../Assets/Images/pn rice.jpg"
+import image11 from "../../Assets/Images/pr r.jpg"
+import image12 from "../../Assets/Images/pt.jpg"
+import image13 from "../../Assets/Images/puli rice.jpg"
+import image14 from "../../Assets/Images/vg.jpg"
+import image15 from "../../Assets/Images/mt.webp"
 
 const Card = () => {
   const [getcount, setGetcount] = useState([
     {
-      image1: "",
+      image:image1,
       name: "Product1",
       price: 20,
       cat: "cat1",
     },
     {
-      image2: "",
+      image: image2,
       name: "Product2",
+      price: 20,
+      cat: "cat1",
+    },
+    {
+      image: image3,
+      name: "Product3",
+      price: 20,
+      cat: "cat1",
+    },
+    {
+      image: image4,
+      name: "Product4",
       price: 20,
       cat: "cat2",
     },
     {
-      image3: "",
-      name: "Product3",
+      image: image5,
+      name: "Product5",
+      price: 20,
+      cat: "cat2",
+    },
+    {
+      image: image6,
+      name: "Product6",
+      price: 20,
+      cat: "cat2",
+    },
+    {
+      image: image7,
+      name: "Product7",
       price: 20,
       cat: "cat3",
     },
     {
-      image4: "",
-      name: "Product4",
+      image: image8,
+      name: "Product8",
+      price: 20,
+      cat: "cat3",
+    },
+    {
+      image:image9,
+      name: "Product9",
+      price: 20,
+      cat: "cat3",
+    },
+    {
+      image: image10,
+      name: "Product10",
       price: 20,
       cat: "cat4",
     },
     {
-      image5: "",
-      name: "Product5",
-      price: 20,
-      cat: "cat",
-    },
-    {
-      image6: "",
-      name: "Product6",
-      price: 20,
-      cat: "cat6",
-    },
-    {
-      image7: "",
-      name: "Product7",
-      price: 20,
-      cat: "cat7",
-    },
-    {
-      image8: "",
-      name: "Product8",
-      price: 20,
-      cat: "cat8",
-    },
-    {
-      image9: "",
-      name: "Product9",
-      price: 20,
-      cat: "cat9",
-    },
-    {
-      image10: "",
-      name: "Product10",
-      price: 20,
-      cat: "cat10",
-    },
-    {
-      image11: "",
+      image: image11,
       name: "Product11",
       price: 20,
-      cat: "cat11",
+      cat: "cat4",
     },
     {
-      image12: "",
+      image: image12,
       name: "Product12",
       price: 20,
-      cat: "cat12",
+      cat: "cat4",
     },
     {
-      image13: "",
+      image: image13,
       name: "Product13",
       price: 20,
-      cat: "cat13",
+      cat: "cat5",
     },
     {
-      image14: "",
+      image: image14,
       name: "Product14",
       price: 20,
-      cat: "cat14",
+      cat: "cat5",
     },
     {
-      image15: "",
+      image: image15,
       name: "Product15",
       price: 20,
-      cat: "cat15",
+      cat: "cat5",
     },
   ]);
-
   return (
     <div className="Cards">
       {getcount.map((item) => {
         return (
-          <div className="card">
-            <div className="card_Top"></div>
-            <div className="card_Content"></div>
-            <div className="card_Bottom"></div>
+          <div class="card">
+            <img src={item.image} alt="Denim Jeans"/>
+            <h1>{item.name}</h1>
+            <p class="price">{item.price}</p>
+            <p>{item.cat}</p>
+            <button className="wishlist">Add wishlist</button>
+            <button className="Addcart">Add to Cart</button>
           </div>
         );
       })}
